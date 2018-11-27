@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后代选择器</title>
+    <style>
+        /* 后代选择器
+        .parent>p  亲儿子
+        .parent p 选中parent之后的所有p
+        */
+    .parent p{
+     color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <div>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        </div>
+    </div>
+</body>
+</html>

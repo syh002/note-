@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--外部样式表-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--不推荐使用-->
+    <style>
+    /*元素选择器 */
+    /*1.id>class>元素选择器
+      2.写样式的时候不要使用id选择器  
+      3.class是可以设置多个的
+    */
+    p{
+        color: red;
+    }
+    /*class类选择器*/
+    .one{
+        color: blue;
+    }
+    .three{
+        background: orange;
+    }
+    /*id选择器*/
+    /* #two{
+        color: pink;
+    } */
+    </style>
+</head>
+<body>
+    <p class="one three" id="two">hello world</p>
+</body>
+</html>

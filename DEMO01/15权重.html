@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 选择器嵌套的越深权重就越高 */
+    .one{
+        color: red;
+    }
+    body>div>p.one{
+        color: green;
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+      <p id="one" class="one">hello world</p>
+    </div>
+</body>
+</html>

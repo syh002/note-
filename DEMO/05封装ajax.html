@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+   <script src="http://result.eolinker.com/4pRhPgBe1911deea5ab4b01704bbfe0b97948d26eb2d31d?uri=/classic/latest"></script>
+</head>
+<body>
+    <script>
+        /*shift+alt+f格式化快捷键*/
+    var url="http://result.eolinker.com/4pRhPgBe1911deea5ab4b01704bbfe0b97948d26eb2d31d?uri=/classic/latest"
+    // $.ajax({
+    //     url,
+    //     type:"get",
+    //     dataType:"json",
+    //     success:function(res){
+    //         console.log(res)
+    //     }
+    // })
+    var baseUrl ="http://result.eolinker.com/4pRhPgBe1911deea5ab4b01704bbfe0b97948d26eb2d31d?uri=";
+    function http({url,type="get",dataType="json",data={},callback}){
+        $.ajax({
+            url:baseUrl+url,
+            type,
+            dataType,
+            data,
+            success:function(res){
+                callback(res);
+            }
+        })
+    }
+    http({
+        url:"name",
+        callback:function(res){
+            console.log(res);
+        }   
+    });
+    http({
+        url:"/classic/latest",
+        callback(res){
+            console.log(res);
+        }
+    })
+</script>
+</body>
+</html>
+
